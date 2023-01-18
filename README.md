@@ -1,5 +1,5 @@
 # Application Tracker
-Unit 3 Project, Full REACT CRUD Application of a Harry Potter Themed Wiki
+Unit 3 Project, Full REACT CRUD Application of a Job Application tracker
 ## Description
 
 This is a centralizied area for the group to store applications an individual has applied to and information about that application & process. When a user accesses the site, when looking at a specific application should be able to see Company Name, title, link, location, interview phase, pay, and personal personal insights. Users should be able to add in a new application they have submitted with details. Other users should be able to see it on the Home Board ands view those same details. 
