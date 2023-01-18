@@ -1,6 +1,17 @@
+import {Link} from 'react-router-dom'
+
 function Header(prop){
     return(
-        <h1>Header</h1>
+        <nav className='nav'>
+            <h1>Job Tracker</h1>
+            <Link to='/'>
+                <div>Home</div>
+            </Link>
+            <Link to='/signup'>
+                <div>Sign-Up</div>
+            </Link>
+        </nav>
+        
     )
 }
 
