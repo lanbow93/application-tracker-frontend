@@ -20,7 +20,7 @@ All about the journey not the destination! UWU
 * Link created for deployment on Render
 
 ### Wireframe
-[Initial Wireframe Created](https://drawsql.app/teams/jonathan-marreros-team/diagrams/application-app)
+[Initial Wireframe Created](https://www.figma.com/file/ei1rR1Hg1WmiGxqC4OYZ23/Untitled?node-id=675%3A407&t=yEOb9VhRVrtClZ0r-0)
 
 ### Trello Board
 [Trello Board](https://trello.com/b/h9laJ0ri/application-tracker)
