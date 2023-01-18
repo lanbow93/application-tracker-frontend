@@ -6,7 +6,7 @@ This is a centralizied area for the group to store applications an individual ha
 
 Ideally we should be able to track who has already applied and have an archive function for when a job is no longer available. 
 
-All about the journey not the destination! uwu
+All about the journey not the destination! UWU
 
 ### Technologies Used
 * HTML
