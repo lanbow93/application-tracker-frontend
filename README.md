@@ -2,8 +2,11 @@
 Unit 3 Project, Full REACT CRUD Application of a Job Application tracker
 ## Description
 
-This is a centralizied area for the group to store applications an individual has applied to and information about that application & process. When a user accesses the site, when looking at a specific application should be able to see Company Name, title, link, location, interview phase, pay, and personal personal insights. Users should be able to add in a new application they have submitted with details. Other users should be able to see it on the Home Board ands view those same details. 
+This is a centralizied area for the group to store applications an individual has applied to and information about that application & process. When a user accesses the site, when looking at a specific application should be able to see Company Name, title, link, location, interview phase, pay, and personal personal insights. Users should be able to add in a new application they have submitted with details. Other users should be able to see it on the Home Board and view those same details. 
 
+Ideally we should be able to track who has already applied and have an archive function for when a job is no longer available. 
+
+All about the journey not the destination! uwu
 
 ### Technologies Used
 * HTML
@@ -23,4 +26,4 @@ This is a centralizied area for the group to store applications an individual ha
 [Trello Board](https://trello.com/b/h9laJ0ri/application-tracker)
 
 ### Link to Project
-[My Project Live Page]()
+[Job Tracker Live Page]()
