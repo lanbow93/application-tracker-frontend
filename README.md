@@ -27,6 +27,16 @@ All about the journey not the destination! UWU
     * Home button
     * Add to Favorites Button
     * Details area
+* Application Update/New Page
+    * Title
+    * Form
+        * Input - Company
+        * Input - Job Title
+        * Input - Salary
+        * Input - Location
+        * Input - Link
+        * Input - Comments
+        * Input - Submit
 
 
 
