@@ -1,7 +1,7 @@
-import {Form} from 'react-router-dom'
+import { Form } from "react-router-dom"
 
 function SubmitPost(props){
-    <Form action='/create' method='post' className='postFormField'>
+    return <Form action={props.action} method='post' className='postFormField'>
         <h2>{props.titleMessage}</h2>
         <label>Company Name: </label>
         <input type='input' name='companyName' placeholder='company name' defaultValue={props?.data?.companyName} />

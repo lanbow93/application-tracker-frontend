@@ -1,5 +1,8 @@
+import SubmitPost from "../components/SubmitPost"
 function NewPost(prop){
-    return <h1>New Page</h1>
+    return <div>
+        <SubmitPost />
+    </div>
 }
 
 export default NewPost

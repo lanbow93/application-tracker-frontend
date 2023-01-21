@@ -1,4 +1,4 @@
-const URL="https://my-job-tracker.onrender.com"
+const URL="http://localhost:5555"
 
 export const jobLoader = async () => {
     const response=await fetch(URL+'/jobs')

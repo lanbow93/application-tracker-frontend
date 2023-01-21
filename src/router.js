@@ -14,7 +14,7 @@ const router = createBrowserRouter (
     createRoutesFromElements (
     <Route path="" element={<App/>}>
         <Route path="" element={<Index/>} loader={jobLoader}/>
-        <Route path="/new" element={<NewPost />}/>
+        <Route path="/newpost" element={<NewPost />}/>
         <Route path="/create" action={createPostAction}/>
         <Route path="/:id/delete" action={deletePostAction}/>
         <Route path="/:id/edit" element={<EditPost />}/>
