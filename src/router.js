@@ -1,20 +1,24 @@
 import { createBrowserRouter, createRoutesFromElements, Route,} from "react-router-dom"
+import { createPostAction, deletePostAction, updatePostAction } from "./action"
+import { jobLoader } from "./loaders"
+import EditPost from "./pages/EditPost"
 import App from "./App"
-import { jobTrackerLoader } from "./loaders"
+import NewPost from "./pages/NewPost"
 import Index from "./pages/Index"
-import UpdateForm from "./components/UpdateForm"
-import { createAction, deleteAction, updateAction } from "./action"
+
+
 
 
 const router = createBrowserRouter (
 
     createRoutesFromElements (
     <Route path="" element={<App/>}>
-        <Route path="" element={<Index/>} loader={jobTrackerLoader}/>
-        <Route path="/create" action={createAction}/>
-        <Route path="/:id/delete" action={deleteAction}/>
-        <Route path="/:id/edit" element={<UpdateForm/>}/>
-        <Route path="/id:/update" action={updateAction}/>
+        <Route path="" element={<Index/>} loader={jobLoader}/>
+        <Route path="/newpost" element={<NewPost />}/>
+        <Route path="/create" action={createPostAction}/>
+        <Route path="/:id/delete" action={deletePostAction}/>
+        <Route path="/:id/edit" element={<EditPost />}/>
+        <Route path="/:id/update" action={updatePostAction}/>
     </Route>
     )
 )
