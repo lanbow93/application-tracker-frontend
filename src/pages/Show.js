@@ -1,6 +1,6 @@
 import { useLoaderData } from "react-router-dom"
 import {Link} from 'react-router-dom'
-import {Form} from 'react-router-dom'
+
 
 function Show(prop){
     const job=useLoaderData()
