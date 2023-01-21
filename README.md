@@ -8,6 +8,28 @@ Ideally we should be able to track who has already applied and have an archive f
 
 All about the journey not the destination! UWU
 
+### Component Map
+* Header
+    * Header Title (Changes with Section)
+    * Nav Buttons
+        * Home
+        * New Job Post
+        * Favorites Button
+        * Applied Jobs
+
+* Application Index Page  
+    * Job Card
+        * Delete Button
+        * More Details Button
+        * Bullet points with slight details
+* Application Show Page
+    * Apply Hyperlink to Job Site
+    * Home button
+    * Add to Favorites Button
+    * Details area
+
+
+
 ### Technologies Used
 * HTML
 * CSS
@@ -20,7 +42,7 @@ All about the journey not the destination! UWU
 * Link created for deployment on Render
 
 ### Wireframe
-[Initial Wireframe Created](https://drawsql.app/teams/jonathan-marreros-team/diagrams/application-app)
+[Initial Wireframe Created](https://www.figma.com/file/ei1rR1Hg1WmiGxqC4OYZ23/Untitled?node-id=675%3A407&t=yEOb9VhRVrtClZ0r-0)
 
 ### Trello Board
 [Trello Board](https://trello.com/b/h9laJ0ri/application-tracker)
