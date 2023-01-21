@@ -9,11 +9,11 @@ function Index(prop){
             <div className="index">
                 {jobs.map((job)=>{      
                     return <div>          
-                        <h2>{job.jobTitle}</h2>
-                        <h3>{`${job.companyName}`}</h3>
-                        <h3>{`${job.salary}`}</h3>
+                        <h2>Title: {job.jobTitle}</h2>
+                        <h3>{job.companyName}</h3>
+                        <h3>${job.salary}</h3>
                         <Link to={`/${job._id}`} className='job'>Click for details</Link>
-                        <Form action={`/delete/${job._id}`} method='post'>
+                        <Form action={`/${job._id}/delete`} method='post'>
                             <input type='submit' value={'X'}/>
                         </Form>
                     </div>   

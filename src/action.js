@@ -24,7 +24,7 @@ export const createPostAction = async ({request, params}) => {
 }
 
 export const deletePostAction = async ({request, params}) => {
-
+    await fetch(`${URL}/jobs/${params.id}`, {method: "delete"} )
 
     return redirect("/")
 }
