@@ -1,7 +1,7 @@
 import SubmitPost from "../components/SubmitPost"
 function NewPost(prop){
     return <div>
-        <SubmitPost />
+        <SubmitPost action="/createpost" />
     </div>
 }
 

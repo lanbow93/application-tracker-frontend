@@ -30,7 +30,24 @@ export const deletePostAction = async ({request, params}) => {
 }
 
 export const updatePostAction = async ({request, params}) => {
+    const formData = await request.formData()
+    const newPosting = {
+        companyName: formData.get("companyName"),
+        jobTitle: formData.get("jobTitle"),
+        location: formData.get("location"),
+        salary: formData.get("salary"),
+        link: formData.get("link"),
+        comments: formData.get("comments")
+    }
 
-
+    await fetch(URL + "/" + params.id, {
+        method: "put",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify(newPosting)
+    })
+    
+    
     return redirect("/")
 }

@@ -15,7 +15,7 @@ const router = createBrowserRouter (
     <Route path="" element={<App/>}>
         <Route path="" element={<Index/>} loader={jobLoader}/>
         <Route path="/newpost" element={<NewPost />}/>
-        <Route path="/create" action={createPostAction}/>
+        <Route path="/createpost" action={createPostAction}/>
         <Route path="/:id/delete" action={deletePostAction}/>
         <Route path="/:id/edit" element={<EditPost />}/>
         <Route path="/:id/update" action={updatePostAction}/>
