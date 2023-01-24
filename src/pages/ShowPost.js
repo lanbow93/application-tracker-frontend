@@ -2,7 +2,7 @@ import { useLoaderData } from "react-router-dom"
 import {Link} from 'react-router-dom'
 
 
-function Show(prop){
+function ShowPost(prop){
     const job=useLoaderData()
     console.log(job)
     return(
@@ -29,4 +29,4 @@ function Show(prop){
     )
 }
 
-export default Show
+export default ShowPost
