@@ -7,8 +7,14 @@ function Header(prop){
             <Link to='/'>
                 <div>Home</div>
             </Link>
-            <Link to='/signup'>
-                <div>Sign-Up</div>
+            <Link to='/newpost'>
+                <div>New Post</div>
+            </Link>
+            <Link to='/favorites'>
+                <div>Favorites</div>
+            </Link>
+            <Link to='/applied'>
+                <div>Applied</div>
             </Link>
         </nav>
         
