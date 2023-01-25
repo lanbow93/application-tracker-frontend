@@ -4,7 +4,6 @@ import {Link} from 'react-router-dom'
 
 function ShowPost(prop){
     const job=useLoaderData()
-    console.log(job)
     return(
         <div className='job'>
             <h1>{job.companyName}</h1>
@@ -17,7 +16,7 @@ function ShowPost(prop){
                 <input type='button' value="Add to Favorites" />
             </div>
             <div>
-                <Link to={`/${job._id}/update?data=${JSON.stringify(job)}`}>
+                <Link to={`/${job._id}/edit?data=${JSON.stringify(job)}`}>
                     <div>Update</div>
                 </Link>
             </div>

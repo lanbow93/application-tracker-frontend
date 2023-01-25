@@ -3,7 +3,6 @@ import {Form, Link, useLoaderData} from 'react-router-dom'
 function Index(prop){
 
     const jobs= useLoaderData()
-    console.log(jobs)
     return <div>
             <h1>My Job Tracker</h1>
             <div className="index">

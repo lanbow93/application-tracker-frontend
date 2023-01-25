@@ -1,5 +1,5 @@
 import { redirect } from "react-router-dom";
-const URL = "http://localhost:5555"
+const URL = "https://my-job-tracker.onrender.com"
 
 export const createPostAction = async ({request, params}) => {
     const formData = await request.formData();
@@ -40,7 +40,7 @@ export const updatePostAction = async ({request, params}) => {
         comments: formData.get("comments")
     }
 
-    await fetch(URL + "/" + params.id, {
+    await fetch(URL + "/jobs/" + params.id, {
         method: "put",
         headers: {
             "Content-Type": "application/json"
