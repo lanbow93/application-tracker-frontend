@@ -1,6 +1,6 @@
 import { createBrowserRouter, createRoutesFromElements, Route,} from "react-router-dom"
 import { createPostAction, deletePostAction, updatePostAction } from "./action"
-import { jobLoader } from "./loaders"
+import { jobsLoader, jobLoader } from "./loaders"
 import EditPost from "./pages/EditPost"
 import ShowPost from "./pages/ShowPost"
 import App from "./App"
@@ -14,10 +14,10 @@ const router = createBrowserRouter (
 
     createRoutesFromElements (
     <Route path="" element={<App/>}>
-        <Route path="" element={<Index/>} loader={jobLoader}/>
+        <Route path="" element={<Index/>} loader={jobsLoader}/>
         <Route path="/newpost" element={<NewPost />}/>
         <Route path="/createpost" action={createPostAction}/>
-        <Route path="/:id" element={<ShowPost />} />
+        <Route path="/:id" element={<ShowPost />} loader={jobLoader}/>
         <Route path="/:id/delete" action={deletePostAction}/>
         <Route path="/:id/edit" element={<EditPost />}/>
         <Route path="/:id/update" action={updatePostAction}/>
