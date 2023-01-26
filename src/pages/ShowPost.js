@@ -8,22 +8,20 @@ function ShowPost(prop){
     return(
         <div className='job'>
             {console.log(job)}
-            <h1>{job.companyName}</h1>
-            <h2>{job.jobTitle}</h2>
-            <h3>{job.comments}</h3>
-            <div>
-                <input type='button' value="Add to Favorites" />
-            </div>
-            <Link to='/'>
-                <div>Home</div>
-            </Link>
-            <div>
+            <h5>Title:</h5>
+            <h4>{job.jobTitle}</h4>
+            <h5>Company:</h5>
+            <h4>{job.companyName}</h4>
+            <h5>Salary:</h5>
+            <h4>${job.salary}</h4>
+            <h5>Comments:</h5>
+            <h4>{job.comments}</h4>
+            <div >
+                <button className="btn btn-primary">Add to Favorites</button>
+                <button className="btn btn-success">Apply Here</button>
                 <Link to={`/${job._id}/edit?data=${JSON.stringify(job)}`}>
-                    <div>Update</div>
+                <button className="btn btn-dark">Update</button>
                 </Link>
-            </div>
-            <div>
-                <a href={job.link}>Apply</a>
             </div>
         </div>
     )

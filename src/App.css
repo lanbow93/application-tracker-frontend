@@ -12,7 +12,7 @@ body {
   grid-template-columns: 1fr 1fr 1fr;
 }
 
-.postFormField{
+.postFormField {
   background-color: #feff9c;
   display: grid;
   grid-template-columns: .50fr 1fr;
@@ -21,6 +21,24 @@ body {
   row-gap: 2rem;
   column-gap: 1rem;
   margin-top: 2rem;
+}
+
+.job {
+  background-color: #feff9c;
+  margin-left: 25%;
+  margin-right: 25%;
+  margin-top: 2rem;
+  padding-top: 1px;
+}
+.job h5 {
+  margin-top: 2rem;
+}
+
+.job button {
+  margin: 2rem 0;
+  width: 30%;
+  height: 4rem;
+  font-weight: bold;
 }
 
 label {
@@ -108,7 +126,7 @@ img {
   .cardContainer {
     margin-left: -2rem;
   }
-  .postFormField {
+  .postFormField, .job {
     margin: 1rem;
   }
 

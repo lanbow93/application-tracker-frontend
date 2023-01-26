@@ -18,7 +18,7 @@ function Index(prop){
                             <h5>Salary:</h5>
                             <h4>${job.salary}</h4>
                             
-                            <Link to={`/${job._id}`} className='job'>Click for details</Link>
+                            <Link to={`/${job._id}`} >Click for details</Link>
                             <Form action={`/${job._id}/delete`} method='post'>
                                 <input type='submit' value={'Delete Post'}/>
                             </Form>
