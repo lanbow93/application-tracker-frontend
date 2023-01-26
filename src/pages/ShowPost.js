@@ -4,8 +4,10 @@ import {Link} from 'react-router-dom'
 
 function ShowPost(prop){
     const job=useLoaderData()
+    
     return(
         <div className='job'>
+            {console.log(job)}
             <h1>{job.companyName}</h1>
             <h2>{job.jobTitle}</h2>
             <h3>{job.comments}</h3>
@@ -20,9 +22,9 @@ function ShowPost(prop){
                     <div>Update</div>
                 </Link>
             </div>
-            <Link to={`${job.link}`}>
-                <div>Apply</div>
-            </Link>
+            <div>
+                <a href={job.link}>Apply</a>
+            </div>
         </div>
     )
 }
