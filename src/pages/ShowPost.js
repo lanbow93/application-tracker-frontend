@@ -9,12 +9,12 @@ function ShowPost(prop){
             <h1>{job.companyName}</h1>
             <h2>{job.jobTitle}</h2>
             <h3>{job.comments}</h3>
-            <Link to='/'>
-                <div>Home</div>
-            </Link>
             <div>
                 <input type='button' value="Add to Favorites" />
             </div>
+            <Link to='/'>
+                <div>Home</div>
+            </Link>
             <div>
                 <Link to={`/${job._id}/edit?data=${JSON.stringify(job)}`}>
                     <div>Update</div>
@@ -23,7 +23,6 @@ function ShowPost(prop){
             <Link to={`${job.link}`}>
                 <div>Apply</div>
             </Link>
-            
         </div>
     )
 }
