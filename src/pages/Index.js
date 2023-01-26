@@ -20,7 +20,7 @@ function Index(prop){
                             
                             <Link to={`/${job._id}`} className='job'>Click for details</Link>
                             <Form action={`/${job._id}/delete`} method='post'>
-                                <input type='submit' value={'X'}/>
+                                <input type='submit' value={'Delete Post'}/>
                             </Form>
                             </Card.Body> 
                             </Card>
