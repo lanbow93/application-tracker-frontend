@@ -5,8 +5,7 @@ function EditPost(prop){
     const params = useParams()
     const queries = new URLSearchParams(window.location.search)
     return <div>
-        {console.log("Params" + params.id)}
-        <SubmitPost action={`/${params.id}/update`} data={JSON.parse(queries.get("data"))} />
+        <SubmitPost action={`/${params.id}/update`} data={JSON.parse(queries.get("data"))} titleMessage="Edit Posting" />
     </div>
 }
 
