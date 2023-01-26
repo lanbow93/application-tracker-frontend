@@ -4,6 +4,7 @@ body {
   height: 100vh;
   background-position: center;
   background-size: cover;
+  background-attachment:fixed;
 }
 
 .index {
@@ -96,9 +97,7 @@ img {
     grid-template-columns: 1fr 1fr;
     
   }
-  body {
-    height: 100%;
-  }
+  
 }
 @media only screen and (max-width: 600px){
 /*Big smartphones [426px -> 600px]*/
@@ -109,6 +108,13 @@ img {
   .cardContainer {
     margin-left: -2rem;
   }
+  .postFormField {
+    margin: 1rem;
+  }
+
+
+  
+
 
 }
 @media only screen and (max-width: 425px){
