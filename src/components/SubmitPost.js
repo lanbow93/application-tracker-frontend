@@ -1,7 +1,5 @@
 import { Form } from "react-router-dom"
 
-
-
 function SubmitPost(props){
     console.log(props.data)
     return <Form action={props.action} method='post' className='postFormField'>
