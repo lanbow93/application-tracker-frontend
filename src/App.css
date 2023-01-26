@@ -14,8 +14,10 @@ body {
 
 .postFormField {
   background-color: #feff9c;
-  display: grid;
-  grid-template-columns: .50fr 1fr;
+  display: flex;
+  /* flex-wrap: wrap; */
+  align-items: center;
+  flex-direction: column;
   margin-left: 25%;
   margin-right: 25%;
   row-gap: 2rem;
@@ -42,8 +44,7 @@ body {
 }
 
 label {
-  text-align: end;
-  margin-right: 1rem;
+  text-align: center;
 }
 
 .postFormField input[type="input"], .postFormField input[type="number"] {
@@ -51,10 +52,8 @@ label {
 }
 
 .postFormField h2, .postFormField input[type="submit"]{
-  grid-column: span 2;
   width: 20%;
-  height: 3rem;
-  margin: 1rem;
+  /* height: 3rem; */
   justify-self: center;
 }
 
