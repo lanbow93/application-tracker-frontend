@@ -18,7 +18,7 @@ function ShowPost(prop){
             <h4>{job.comments}</h4>
             <div >
                 <button className="btn btn-primary">Add to Favorites</button>
-                <button className="btn btn-success">Apply Here</button>
+                <a href={job.link} target="_blank" rel="noopener noreferrer" ><button className="btn btn-success">Apply Here</button></a>
                 <Link to={`/${job._id}/edit?data=${JSON.stringify(job)}`}>
                 <button className="btn btn-dark">Update</button>
                 </Link>
