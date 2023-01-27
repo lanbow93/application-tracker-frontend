@@ -6,7 +6,9 @@ function Index(prop){
     return  <div >
                 {/* <h1>My Job Tracker</h1> */}
                 <div className="index">
-                    {jobs.map((job, index)=>{      
+                    {jobs.map((job, index)=>{     
+                        // let num = job.salary
+                        // let jobSalary = num.toLocalString() 
                         return <div className={`cardContainer`}>  
                             <Card style={{ width: '20rem', margin: '10px'}}>
                             <Card.Body className={(index%4)+1}>
