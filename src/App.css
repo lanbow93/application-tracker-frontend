@@ -157,6 +157,15 @@ img {
   text-decoration: underline !important;
 }
 
+.fav, .apply, .update {
+  background-color: aquamarine !important;
+  width: 150px !important;
+}
+
+.fav:hover, .apply:hover, .update:hover {
+  background: linear-gradient(to top, #f196c5 0%, #f7dc55 100%);
+}
+
 @media only screen and (max-width: 1000px){
   /*Tablets [601px -> 1200px]*/
   .index {
