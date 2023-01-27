@@ -4,6 +4,7 @@ import {Link} from 'react-router-dom'
 
 function ShowPost(prop){
     const job=useLoaderData()
+    const jobSalary = job.salary.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',') 
     
     return(
         <div className='job'>
@@ -13,7 +14,7 @@ function ShowPost(prop){
             <h5>Company:</h5>
             <h4>{job.companyName}</h4>
             <h5>Salary:</h5>
-            <h4>${job.salary}</h4>
+            <h4>${jobSalary}</h4>
             <h5>Comments:</h5>
             <h4>{job.comments}</h4>
             <div >
