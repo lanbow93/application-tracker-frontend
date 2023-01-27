@@ -19,11 +19,12 @@ function Index(prop){
                             <h4>{job.companyName}</h4>
                             <h5>Salary:</h5>
                             <h4>${job.salary}</h4>
-                            
-                            <Link to={`/${job._id}`} >Click for details</Link>
-                            <Form action={`/${job._id}/delete`} method='post'>
-                                <input type='submit' value={'Delete Post'}/>
-                            </Form>
+                            <div className='d-flex justify-content-around'>
+                                <Link to={`/${job._id}`} ><input type='submit' value="More Details" className='more' /></Link>
+                                <Form action={`/${job._id}/delete`} method='post'>
+                                    <input type='submit' value={'Delete Post'} className="delete" />
+                                </Form>
+                            </div>
                             </Card.Body> 
                             </Card>
                            

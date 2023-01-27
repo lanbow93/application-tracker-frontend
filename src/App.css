@@ -86,11 +86,31 @@ label {
   width: 22rem;
   box-shadow: 10px 10px 3px 3px rgba(0, 0, 0, 0.2);
 }
-.cardContainer input {
+
+.delete, .more {
+  width: 8rem;
+  height: 2rem;
+}
+.delete {
   margin-top: .5rem;
   border-radius: 15px;
   border-style: none;
   background-color: rgb(252, 174, 174);
+}
+
+.delete:hover {
+  background-color: red;
+}
+
+.more {
+  margin-top: .5rem;
+  border-radius: 15px;
+  border-style: none;
+  background-color: rgb(174, 252, 178);
+}
+
+.more:hover{
+  background-color: rgb(83, 231, 83);
 }
 
 h4{
@@ -98,9 +118,7 @@ h4{
   font-family: 'Reenie Beanie', cursive;
   margin: 0 !important;
 }
-.cardContainer input:hover {
-  background-color: red;
-}
+
 .cardContainer {
   display: flex;
   justify-content: center;
