@@ -16,11 +16,11 @@ function ShowPost(prop){
             <h4>${job.salary}</h4>
             <h5>Comments:</h5>
             <h4>{job.comments}</h4>
-            <div >
-                <button className="btn btn-primary">Add to Favorites</button>
-                <a href={job.link} target="_blank" rel="noopener noreferrer" ><button className="btn btn-success">Apply Here</button></a>
+            <div className="d-flex justify-content-around">
+                <button className="btn fav">Add to Favorites</button>
+                <a href={job.link} target="_blank" rel="noopener noreferrer" ><button className="btn apply">Apply Here</button></a>
                 <Link to={`/${job._id}/edit?data=${JSON.stringify(job)}`}>
-                <button className="btn btn-dark">Update</button>
+                <button className="btn update">Update</button>
                 </Link>
             </div>
         </div>
