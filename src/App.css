@@ -166,6 +166,12 @@ img {
   background: linear-gradient(to top, #f196c5 0%, #f7dc55 100%);
 }
 
+
+.job .thumbtack, .postFormField .thumbtack {
+  width: 4rem;
+  margin-top: -1rem;
+}
+
 @media only screen and (max-width: 1000px){
   /*Tablets [601px -> 1200px]*/
   .index {

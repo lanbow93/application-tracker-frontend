@@ -4,6 +4,7 @@ import { Form } from "react-router-dom"
 function SubmitPost(props){
     console.log(props.data)
     return <Form action={props.action} method='post' className='postFormField'>
+        <img src="https://i.imgur.com/9uOKqTk.png" alt="Red thumbtack" className='thumbtack'/>
         <h2>{props.titleMessage}</h2>
         <label>Company Name: </label>
         <input type='input' name='companyName' placeholder='company name' defaultValue={props?.data?.companyName} />

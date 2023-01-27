@@ -8,7 +8,7 @@ function ShowPost(prop){
     
     return(
         <div className='job'>
-            {console.log(job)}
+            <img src="https://i.imgur.com/9uOKqTk.png" alt="Red thumbtack" className='thumbtack'/> 
             <h5>Title:</h5>
             <h4>{job.jobTitle}</h4>
             <h5>Company:</h5>
