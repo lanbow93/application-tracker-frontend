@@ -8,7 +8,7 @@ function Header(prop){
         
             <Navbar bg="dark" variant={'dark'} expand="lg">
               <Container>
-                <Navbar.Brand href="#home"><h1>Job Tracker</h1></Navbar.Brand>
+                <Navbar.Brand href="/"><h1>Job Tracker</h1></Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                   <Nav className="me-auto">
@@ -17,12 +17,6 @@ function Header(prop){
                     </Link></Nav.Link>
                     <Nav.Link ><Link to='/newpost'>
                         <div>New Post</div>
-                    </Link></Nav.Link>
-                    <Nav.Link ><Link to='/favorites'>
-                        <div>Favorites</div>
-                    </Link></Nav.Link>
-                    <Nav.Link ><Link to='/applied'>
-                        <div>Applied</div>
                     </Link></Nav.Link>
                   </Nav>
                 </Navbar.Collapse>

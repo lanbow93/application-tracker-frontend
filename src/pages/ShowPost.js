@@ -18,7 +18,6 @@ function ShowPost(prop){
             <h5>Comments:</h5>
             <h4>{job.comments}</h4>
             <div className="d-flex justify-content-around">
-                <button className="btn fav">Add to Favorites</button>
                 <a href={job.link} target="_blank" rel="noopener noreferrer" ><button className="btn apply">Apply Here</button></a>
                 <Link to={`/${job._id}/edit?data=${JSON.stringify(job)}`}>
                 <button className="btn update">Update</button>
