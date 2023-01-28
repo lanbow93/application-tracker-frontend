@@ -25,6 +25,11 @@ body {
   margin-top: 2rem;
 }
 
+.pacman {
+  margin-left: 45%;
+  margin-top: 15rem;
+}
+
 .postFormField h2, label, .postFormField input[type="submit"]{
   font-family: 'Reenie Beanie', cursive;
 }
@@ -188,7 +193,9 @@ img {
     margin: 1rem;
   }
 
-
+  .pacman {
+    margin-left: 2rem;
+  }
   
 
 
