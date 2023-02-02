@@ -48,6 +48,6 @@ export const updatePostAction = async ({request, params}) => {
         body: JSON.stringify(newPosting)
     })
     
-    
+
     return redirect("/")
 }

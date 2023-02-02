@@ -4,7 +4,7 @@ import {Link} from 'react-router-dom'
 
 function ShowPost(prop){
     const job=useLoaderData()
-    const jobSalary = job.salary.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',') 
+    const jobSalary = job?.salary?.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',') 
     
     return(
         <div className='job'>

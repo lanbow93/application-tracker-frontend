@@ -8,7 +8,7 @@ function Index(prop){
                 {/* <h1>My Job Tracker</h1> */}
                 <div className="index">
                     {jobs.map((job, index)=>{     
-                        const jobSalary = job.salary.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',') 
+                        const jobSalary = job?.salary?.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
                         return <div className={`cardContainer`}>  
                             <Card style={{ width: '20rem', margin: '10px'}}>
                             <Card.Body className={(index%4)+1}>
